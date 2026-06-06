@@ -11,7 +11,7 @@ Covers Python basics, NumPy, Pandas, Linear Algebra, Statistics, and Probability
 ---
 
 ## Week 2 — End-to-End ML Pipeline
-**File:** `week2_Ananya_Garg_fixed.ipynb`  
+**File:** `week2_Ananya_Garg.ipynb`  
 **Dataset:** Tesla EA Deliveries & Production (2015–2025) — 2,640 rows × 12 columns
 **Target:** `Estimated_Deliveries`, `Avg_Price_USD`
 
