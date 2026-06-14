@@ -29,4 +29,22 @@ Covers Python basics, NumPy, Pandas, Linear Algebra, Statistics, and Probability
 
 ---
 
-*More assignments coming soon (Weeks 3–8)*
+## Week 3 — Customer Intelligence / Country Segmentation
+**File:** `week3_Ananya_Garg.ipynb`
+**Dataset:** Unsupervised Learning on Country Data — 167 countries × 9 features
+**Goal:** Segment countries by socio-economic indicators and identify nations needing aid
+
+### Pipeline Structure
+| Step | Description |
+|------|-------------|
+| Cleaning | Strip whitespace, drop duplicates, force numeric types, median imputation |
+| EDA | Correlation heatmap, boxplot per feature |
+| Feature Scaling | StandardScaler on all numeric features |
+| Elbow Method | K-Means inertia loop over k∈[2,10], elbow curve plotted |
+| K-Means (k=3) | 3 clusters — Developed, Developing, Underdeveloped |
+| DBSCAN | eps=1.5, min_samples=5 — secondary clustering method |
+| PCA Visualization | 2D scatterplot of K-Means clusters |
+| Cluster Profiling | Mean profile per cluster across all features |
+| Key Insights | 5 observations on aid priority, economic zones, development gaps |
+
+---
