@@ -48,3 +48,21 @@ Covers Python basics, NumPy, Pandas, Linear Algebra, Statistics, and Probability
 | Key Insights | 5 observations on aid priority, economic zones, development gaps |
 
 ---
+
+## Week 4 — CIFAR-10 Image Classification (ANN vs CNN)
+**File:** `week4_Ananya_Garg.ipynb`
+**Dataset:** CIFAR-10 — 60,000 images (32×32×3), 10 classes
+
+### Pipeline Structure
+| Step | Description |
+|------|-------------|
+| Data Loading | 50,000 train + 10,000 test images via `tf.keras.datasets` |
+| Preprocessing | Pixel normalization 0–255 → 0–1, flattening for ANN |
+| ANN | Dense (1024→512→256→128) with Dropout — test accuracy 38.81% |
+| CNN | Conv2D (32→64→128) + BatchNorm + MaxPooling — test accuracy 69.79% |
+| Training | Adam optimizer, sparse categorical crossentropy, 10 epochs |
+| Learning Curves | Validation accuracy + loss comparison — ANN vs CNN |
+| Augmented CNN | RandomFlip + RandomRotation + RandomZoom + EarlyStopping + ReduceLROnPlateau over 20 epochs — test accuracy 74.14% |
+| Confusion Matrix | Side-by-side ANN vs CNN heatmap across all 10 classes |
+
+---
