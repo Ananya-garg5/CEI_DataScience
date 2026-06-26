@@ -66,3 +66,19 @@ Covers Python basics, NumPy, Pandas, Linear Algebra, Statistics, and Probability
 | Confusion Matrix | Side-by-side ANN vs CNN heatmap across all 10 classes |
 
 ---
+## Week 5 — Text Generation (RNN vs LSTM vs GRU)
+**File:** `week5_Ananya_Garg.ipynb`
+**Corpus:** Custom AI/ML paragraph — 20 sentences, 145-word vocabulary
+
+### Pipeline Structure
+| Step | Description |
+|------|-------------|
+| Corpus & Cleaning | Custom 20-sentence AI/ML corpus, lowercased and stripped |
+| Tokenization | Keras Tokenizer — 145 unique tokens, word-to-integer mapping |
+| Sequence Preparation | N-gram sliding window → 180 sequences, pre-padded to length 12 |
+| Vanilla RNN | Embedding(64) + SimpleRNN(128) + Dense(softmax) |
+| LSTM | Embedding(64) + LSTM(128) + Dense(softmax) |
+| GRU | Embedding(64) + GRU(128) + Dense(softmax) |
+| Training | Adam optimizer, sparse categorical crossentropy, 200 epochs each |
+| Loss Comparison | Line plot — RNN: 0.0098 / LSTM: 0.0690 / GRU: 0.0138 |
+| Text Generation | Greedy decoding via np.argmax, 10 words per seed prompt |
